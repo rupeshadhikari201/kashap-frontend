@@ -2,6 +2,9 @@ import axios from 'axios';
 import { toast } from 'sonner';
 
 const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000';
+console.log("API_BASE_URL is:", API_BASE_URL);
+console.log("NEXT_PUBLIC_API_URL is:", process.env.NEXT_PUBLIC_API_URL);
+
 
 // an instance of axios with interceptors for handling auth tokens
 const api = axios.create({
